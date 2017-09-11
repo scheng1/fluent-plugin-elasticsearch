@@ -292,6 +292,10 @@ module Fluent::Plugin
       ret
     end
 
+    def multi_workers_ready?
+      true
+    end
+
     def write(chunk)
       bulk_message = ''
       header = {}
